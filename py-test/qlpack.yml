@@ -1,0 +1,6 @@
+name: echo/mcp-py-tests
+version: 0.0.1
+extractor: python
+dependencies:
+  echo/mcp-py: "*"
+  codeql/python-all: "*"

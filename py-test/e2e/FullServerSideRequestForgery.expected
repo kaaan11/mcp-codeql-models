@@ -1,0 +1,8 @@
+edges
+| server.py:18:11:18:13 | ControlFlowNode for url | server.py:19:25:19:27 | ControlFlowNode for url | provenance |  |
+nodes
+| server.py:18:11:18:13 | ControlFlowNode for url | semmle.label | ControlFlowNode for url |
+| server.py:19:25:19:27 | ControlFlowNode for url | semmle.label | ControlFlowNode for url |
+subpaths
+#select
+| server.py:19:12:19:28 | ControlFlowNode for Attribute() | server.py:18:11:18:13 | ControlFlowNode for url | server.py:19:25:19:27 | ControlFlowNode for url | The full URL of this request depends on a $@. | server.py:18:11:18:13 | ControlFlowNode for url | user-provided value |

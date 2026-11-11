@@ -1,0 +1,5 @@
+*.testproj/
+mutasyon/
+.cache/
+*.sarif
+db/

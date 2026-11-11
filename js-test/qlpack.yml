@@ -1,0 +1,6 @@
+name: echo/mcp-js-tests
+version: 0.0.1
+extractor: javascript
+dependencies:
+  echo/mcp-js: "*"
+  codeql/javascript-all: "*"

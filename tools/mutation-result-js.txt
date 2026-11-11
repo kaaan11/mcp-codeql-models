@@ -1,0 +1,37 @@
+M1-fallback-yok: KIRMIZI
+    -| tools_untyped.js:4:24:4:27 | args | MCP tool argument |
+M2-apigraph-yok: KIRMIZI
+    -| apigraph_only.ts:5:26:5:29 | args | MCP tool argument |
+M3-fallback-import-sarti-yok: KIRMIZI
+    +| negatives.ts:3:20:3:20 | a | MCP tool argument |
+    +| via_reexport.ts:4:20:4:23 | args | MCP tool argument |
+M4-schema-capasi-yok: KIRMIZI
+    +| calltool.ts:14:14:14:37 | request ... guments | MCP CallTool arguments |
+    +| negatives.ts:7:61:7:80 | req.params.arguments | MCP CallTool arguments |
+M5-calltool-yok: KIRMIZI
+    -| calltool.ts:9:17:9:40 | request ... guments | MCP CallTool arguments |
+M6-vercel-yok: KIRMIZI
+    -| api/server.ts:5:26:5:35 | targetPath | api/server.ts:5:75:5:84 | targetPath | provenance |  |
+    -| api/server.ts:5:75:5:84 | targetPath | api/server.ts:5:65:5:87 | `df -h  ... Path}"` | provenance |  |
+    -| api/server.ts:7:9:7:16 | { path } | api/server.ts:7:11:7:14 | path | provenance |  |
+    -| api/server.ts:7:11:7:14 | path | api/server.ts:8:28:8:31 | path | provenance |  |
+    -| api/server.ts:7:20:7:27 | req.body | api/server.ts:7:9:7:16 | { path } | provenance |  |
+    -| api/server.ts:8:28:8:31 | path | api/server.ts:5:26:5:35 | targetPath | provenance |  |
+    -| api/server.ts:5:26:5:35 | targetPath | semmle.label | targetPath |
+    -| api/server.ts:5:65:5:87 | `df -h  ... Path}"` | semmle.label | `df -h  ... Path}"` |
+    -| api/server.ts:5:75:5:84 | targetPath | semmle.label | targetPath |
+    -| api/server.ts:7:9:7:16 | { path } | semmle.label | { path } |
+    -| api/server.ts:7:11:7:14 | path | semmle.label | path |
+    -| api/server.ts:7:20:7:27 | req.body | semmle.label | req.body |
+    -| api/server.ts:8:28:8:31 | path | semmle.label | path |
+    -| api/server.ts:5:65:5:87 | `df -h  ... Path}"` | api/server.ts:7:20:7:27 | req.body | api/server.ts:5:65:5:87 | `df -h  ... Path}"` | This command line depends on a $@. | api/server.ts:7:20:7:27 | req.body | user-provided value |
+    -| api/disk.ts:3:20:3:27 | req.body | Vercel request input |
+    -| api/disk.ts:4:13:4:21 | req.query | Vercel request input |
+M7-vercel-klasor-sarti-yok: KIRMIZI
+    +| app/notapi.ts:2:62:2:69 | req.body | Vercel request input |
+M8-hono-yok: KIRMIZI
+    -| hono.ts:4:47:4:58 | c.req.json() | Hono request input |
+    -| hono.ts:4:71:4:86 | c.req.query("q") | Hono request input |
+    -| hono.ts:4:99:4:115 | c.req.param("id") | Hono request input |
+M9-hono-metot-listesi-yok: KIRMIZI
+    +| hono.ts:6:29:6:45 | c.req.header("h") | Hono request input |

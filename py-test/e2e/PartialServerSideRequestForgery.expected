@@ -1,0 +1,11 @@
+edges
+| server.py:18:11:18:13 | ControlFlowNode for url | server.py:19:25:19:27 | ControlFlowNode for url | provenance |  |
+| server.py:22:16:22:19 | ControlFlowNode for page | server.py:23:25:23:57 | ControlFlowNode for BinaryExpr | provenance |  |
+nodes
+| server.py:18:11:18:13 | ControlFlowNode for url | semmle.label | ControlFlowNode for url |
+| server.py:19:25:19:27 | ControlFlowNode for url | semmle.label | ControlFlowNode for url |
+| server.py:22:16:22:19 | ControlFlowNode for page | semmle.label | ControlFlowNode for page |
+| server.py:23:25:23:57 | ControlFlowNode for BinaryExpr | semmle.label | ControlFlowNode for BinaryExpr |
+subpaths
+#select
+| server.py:23:12:23:58 | ControlFlowNode for Attribute() | server.py:22:16:22:19 | ControlFlowNode for page | server.py:23:25:23:57 | ControlFlowNode for BinaryExpr | Part of the URL of this request depends on a $@. | server.py:22:16:22:19 | ControlFlowNode for page | user-provided value |

@@ -1,0 +1,5 @@
+provide:
+  - "js/qlpack.yml"
+  - "js-test/qlpack.yml"
+  - "py/qlpack.yml"
+  - "py-test/qlpack.yml"

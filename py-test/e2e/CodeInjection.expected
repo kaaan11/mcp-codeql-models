@@ -1,0 +1,8 @@
+edges
+| server.py:26:10:26:13 | ControlFlowNode for expr | server.py:27:17:27:20 | ControlFlowNode for expr | provenance |  |
+nodes
+| server.py:26:10:26:13 | ControlFlowNode for expr | semmle.label | ControlFlowNode for expr |
+| server.py:27:17:27:20 | ControlFlowNode for expr | semmle.label | ControlFlowNode for expr |
+subpaths
+#select
+| server.py:27:17:27:20 | ControlFlowNode for expr | server.py:26:10:26:13 | ControlFlowNode for expr | server.py:27:17:27:20 | ControlFlowNode for expr | This code execution depends on a $@. | server.py:26:10:26:13 | ControlFlowNode for expr | user-provided value |

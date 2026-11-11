@@ -1,0 +1,11 @@
+| api/disk.ts:3:20:3:27 | req.body | Vercel request input |
+| api/disk.ts:4:13:4:21 | req.query | Vercel request input |
+| apigraph_only.ts:5:26:5:29 | args | MCP tool argument |
+| calltool.ts:9:17:9:40 | request ... guments | MCP CallTool arguments |
+| hono.ts:4:47:4:58 | c.req.json() | Hono request input |
+| hono.ts:4:71:4:86 | c.req.query("q") | Hono request input |
+| hono.ts:4:99:4:115 | c.req.param("id") | Hono request input |
+| tools_typed.ts:6:46:6:50 | { x } | MCP tool argument |
+| tools_typed.ts:7:56:7:59 | args | MCP tool argument |
+| tools_typed.ts:12:20:12:23 | args | MCP tool argument |
+| tools_untyped.js:4:24:4:27 | args | MCP tool argument |

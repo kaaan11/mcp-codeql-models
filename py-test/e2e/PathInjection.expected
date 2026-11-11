@@ -1,0 +1,8 @@
+edges
+| server.py:13:10:13:13 | ControlFlowNode for path | server.py:14:15:14:18 | ControlFlowNode for path | provenance |  |
+nodes
+| server.py:13:10:13:13 | ControlFlowNode for path | semmle.label | ControlFlowNode for path |
+| server.py:14:15:14:18 | ControlFlowNode for path | semmle.label | ControlFlowNode for path |
+subpaths
+#select
+| server.py:14:15:14:18 | ControlFlowNode for path | server.py:13:10:13:13 | ControlFlowNode for path | server.py:14:15:14:18 | ControlFlowNode for path | This path depends on a $@. | server.py:13:10:13:13 | ControlFlowNode for path | user-provided value |

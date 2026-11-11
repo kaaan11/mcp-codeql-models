@@ -1,0 +1,26 @@
+edges
+| api/server.ts:5:26:5:35 | targetPath | api/server.ts:5:75:5:84 | targetPath | provenance |  |
+| api/server.ts:5:75:5:84 | targetPath | api/server.ts:5:65:5:87 | `df -h  ... Path}"` | provenance |  |
+| api/server.ts:7:9:7:16 | { path } | api/server.ts:7:11:7:14 | path | provenance |  |
+| api/server.ts:7:11:7:14 | path | api/server.ts:8:28:8:31 | path | provenance |  |
+| api/server.ts:7:20:7:27 | req.body | api/server.ts:7:9:7:16 | { path } | provenance |  |
+| api/server.ts:8:28:8:31 | path | api/server.ts:5:26:5:35 | targetPath | provenance |  |
+| tool.ts:4:42:4:48 | { cmd } | tool.ts:4:44:4:46 | cmd | provenance |  |
+| tool.ts:4:44:4:46 | cmd | tool.ts:4:69:4:71 | cmd | provenance |  |
+| tool.ts:4:69:4:71 | cmd | tool.ts:4:61:4:71 | "ls " + cmd | provenance |  |
+nodes
+| api/server.ts:5:26:5:35 | targetPath | semmle.label | targetPath |
+| api/server.ts:5:65:5:87 | `df -h  ... Path}"` | semmle.label | `df -h  ... Path}"` |
+| api/server.ts:5:75:5:84 | targetPath | semmle.label | targetPath |
+| api/server.ts:7:9:7:16 | { path } | semmle.label | { path } |
+| api/server.ts:7:11:7:14 | path | semmle.label | path |
+| api/server.ts:7:20:7:27 | req.body | semmle.label | req.body |
+| api/server.ts:8:28:8:31 | path | semmle.label | path |
+| tool.ts:4:42:4:48 | { cmd } | semmle.label | { cmd } |
+| tool.ts:4:44:4:46 | cmd | semmle.label | cmd |
+| tool.ts:4:61:4:71 | "ls " + cmd | semmle.label | "ls " + cmd |
+| tool.ts:4:69:4:71 | cmd | semmle.label | cmd |
+subpaths
+#select
+| api/server.ts:5:65:5:87 | `df -h  ... Path}"` | api/server.ts:7:20:7:27 | req.body | api/server.ts:5:65:5:87 | `df -h  ... Path}"` | This command line depends on a $@. | api/server.ts:7:20:7:27 | req.body | user-provided value |
+| tool.ts:4:61:4:71 | "ls " + cmd | tool.ts:4:42:4:48 | { cmd } | tool.ts:4:61:4:71 | "ls " + cmd | This command line depends on a $@. | tool.ts:4:42:4:48 | { cmd } | user-provided value |

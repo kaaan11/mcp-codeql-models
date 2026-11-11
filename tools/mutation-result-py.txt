@@ -1,0 +1,27 @@
+P1-apigraph-yok: KIRMIZI
+    -| tools_remote.py:5:17:5:24 | ControlFlowNode for filename | MCP tool argument |
+P2-fallback-yok: KIRMIZI
+    -| fallback_only.py:7:21:7:24 | ControlFlowNode for item | MCP tool argument |
+P3-fallback-import-sarti-yok: KIRMIZI
+    +| negatives.py:11:20:11:22 | ControlFlowNode for ctx | MCP tool argument |
+    +| negatives.py:11:25:11:29 | ControlFlowNode for query | MCP tool argument |
+P4-import-tam-ad-degil-onek: KIRMIZI
+    +| negatives.py:11:20:11:22 | ControlFlowNode for ctx | MCP tool argument |
+    +| negatives.py:11:25:11:29 | ControlFlowNode for query | MCP tool argument |
+P5-context-dislama-yok: KIRMIZI
+    +| fallback_only.py:7:32:7:34 | ControlFlowNode for ctx | MCP tool argument |
+    +| fastmcp_sdk.py:14:27:14:29 | ControlFlowNode for ctx | MCP tool argument |
+P6-calltool-name-siniri-yok: KIRMIZI
+    +| lowlevel.py:6:18:6:21 | ControlFlowNode for name | MCP CallTool arguments |
+    +| lowlevel.py:14:25:14:33 | ControlFlowNode for tool_name | MCP CallTool arguments |
+P7-add-tool-yok: KIRMIZI
+    -| fastmcp_sdk.py:23:14:23:14 | ControlFlowNode for q | MCP tool argument |
+P8-calltool-sinifi-yok: KIRMIZI
+    -| server.py:36:29:36:37 | ControlFlowNode for arguments | server.py:37:27:37:42 | ControlFlowNode for Subscript | provenance |  |
+    -| server.py:36:29:36:37 | ControlFlowNode for arguments | semmle.label | ControlFlowNode for arguments |
+    -| server.py:37:27:37:42 | ControlFlowNode for Subscript | semmle.label | ControlFlowNode for Subscript |
+    -| server.py:37:27:37:42 | ControlFlowNode for Subscript | server.py:36:29:36:37 | ControlFlowNode for arguments | server.py:37:27:37:42 | ControlFlowNode for Subscript | This command line depends on a $@. | server.py:36:29:36:37 | ControlFlowNode for arguments | user-provided value |
+    -| lowlevel.py:6:29:6:37 | ControlFlowNode for arguments | MCP CallTool arguments |
+    -| lowlevel.py:14:36:14:39 | ControlFlowNode for args | MCP CallTool arguments |
+P9-kwarg-vararg-yok: KIRMIZI
+    -| fastmcp_sdk.py:10:47:10:51 | ControlFlowNode for extra | MCP tool argument |

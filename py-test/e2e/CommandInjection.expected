@@ -1,0 +1,12 @@
+edges
+| server.py:9:9:9:11 | ControlFlowNode for cmd | server.py:10:27:10:29 | ControlFlowNode for cmd | provenance |  |
+| server.py:36:29:36:37 | ControlFlowNode for arguments | server.py:37:27:37:42 | ControlFlowNode for Subscript | provenance |  |
+nodes
+| server.py:9:9:9:11 | ControlFlowNode for cmd | semmle.label | ControlFlowNode for cmd |
+| server.py:10:27:10:29 | ControlFlowNode for cmd | semmle.label | ControlFlowNode for cmd |
+| server.py:36:29:36:37 | ControlFlowNode for arguments | semmle.label | ControlFlowNode for arguments |
+| server.py:37:27:37:42 | ControlFlowNode for Subscript | semmle.label | ControlFlowNode for Subscript |
+subpaths
+#select
+| server.py:10:27:10:29 | ControlFlowNode for cmd | server.py:9:9:9:11 | ControlFlowNode for cmd | server.py:10:27:10:29 | ControlFlowNode for cmd | This command line depends on a $@. | server.py:9:9:9:11 | ControlFlowNode for cmd | user-provided value |
+| server.py:37:27:37:42 | ControlFlowNode for Subscript | server.py:36:29:36:37 | ControlFlowNode for arguments | server.py:37:27:37:42 | ControlFlowNode for Subscript | This command line depends on a $@. | server.py:36:29:36:37 | ControlFlowNode for arguments | user-provided value |
